@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html ⚡>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+
+    <title>Mediastream - CDP (Customer Data Platform)</title>
+
+    <meta name="description" content="Design and Implementation of a Customer Data Platform to Centralize and Manage Client Information">
+    <link rel="icon" href="http://localhost:2368/content/images/size/w256h256/2021/12/mt..png" type="image/png">
+    <link rel="canonical" href="http://localhost:2368/en/mediastream-cdp-en/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    
+    <meta property="og:site_name" content="Mitty Romero Antonioli - Product Design - Portafolio">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Mediastream - CDP (Customer Data Platform)">
+    <meta property="og:description" content="Design and Implementation of a Customer Data Platform to Centralize and Manage Client Information">
+    <meta property="og:url" content="http://localhost:2368/en/mediastream-cdp-en/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2024/07/thumb-5.png">
+    <meta property="article:published_time" content="2024-07-26T07:22:49.000Z">
+    <meta property="article:modified_time" content="2024-07-26T07:38:51.000Z">
+    <meta property="article:tag" content="Web/UX/UI">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Mediastream - CDP (Customer Data Platform)">
+    <meta name="twitter:description" content="Design and Implementation of a Customer Data Platform to Centralize and Manage Client Information">
+    <meta name="twitter:url" content="http://localhost:2368/en/mediastream-cdp-en/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2024/07/thumb-5.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="en">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Web/UX/UI">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="619">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Mitty Romero Antonioli - Product Design - Portafolio",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2021/12/mt..svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "en",
+        "url": "http://localhost:2368/author/en/",
+        "sameAs": []
+    },
+    "headline": "Mediastream - CDP (Customer Data Platform)",
+    "url": "http://localhost:2368/en/mediastream-cdp-en/",
+    "datePublished": "2024-07-26T07:22:49.000Z",
+    "dateModified": "2024-07-26T07:38:51.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2024/07/thumb-5.png",
+        "width": 1200,
+        "height": 619
+    },
+    "keywords": "Web/UX/UI",
+    "description": "Design and Implementation of a Customer Data Platform to Centralize and Manage Client Information",
+    "mainEntityOfPage": "http://localhost:2368/en/mediastream-cdp-en/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.88">
+    <link rel="alternate" type="application/rss+xml" title="Mitty Romero Antonioli - Product Design - Portafolio" href="http://localhost:2368/rss/">
+
+    <style amp-custom>
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        font-size: 62.5%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    body {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        color: #3a4145;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        font-size: 1.7rem;
+        line-height: 1.55em;
+        font-weight: 400;
+        font-style: normal;
+        background: #fff;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    p,
+    ul,
+    ol,
+    li,
+    dl,
+    dd,
+    hr,
+    pre,
+    form,
+    table,
+    video,
+    figure,
+    figcaption,
+    blockquote {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul[class],
+    ol[class] {
+        padding: 0;
+        list-style: none;
+    }
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+
+    input,
+    button,
+    select,
+    textarea {
+        font: inherit;
+        -webkit-appearance: none;
+    }
+
+    fieldset {
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
+    label {
+        display: block;
+        font-size: 0.9em;
+        font-weight: 700;
+    }
+
+    hr {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid currentcolor;
+        opacity: 0.1;
+    }
+
+    ::selection {
+        text-shadow: none;
+        background: #cbeafb;
+    }
+
+    mark {
+        background-color: #fdffb6;
+    }
+
+    small {
+        font-size: 80%;
+    }
+
+    sub,
+    sup {
+        position: relative;
+        font-size: 75%;
+        line-height: 0;
+        vertical-align: baseline;
+    }
+    sup {
+        top: -0.5em;
+    }
+    sub {
+        bottom: -0.25em;
+    }
+
+    ul li + li {
+        margin-top: 0.6em;
+    }
+
+    a {
+        color: var(--ghost-accent-color, #1292EE);
+        text-decoration-skip-ink: auto;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin: 0;
+        font-weight: 700;
+        color: #121212;
+        line-height: 1.4em;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        line-height: 1.1em;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        line-height: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.8rem;
+    }
+
+    h4 {
+        font-size: 1.7rem;
+    }
+
+    h5 {
+        font-size: 1.6rem;
+    }
+
+    h6 {
+        font-size: 1.6rem;
+    }
+
+    amp-img {
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    amp-img img {
+        object-fit: cover;
+    }
+    
+    amp-youtube {
+        height: calc(100vw / 1.78);
+        width: 100vw;
+        position: relative;
+    }
+
+    amp-youtube img {
+        position: absolute;
+    }
+
+    .page-header {
+        padding: 50px 5vmin 30px;
+        text-align: center;
+        font-size: 2rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .page-header a {
+        color: #121212;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 1.6rem;
+        letter-spacing: -0.1px;
+    }
+
+    .post {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+
+    .post-header {
+        margin: 0 5vmin 5vmin;
+        text-align: center;
+    }
+
+    .post-meta {
+        margin: 1rem 0 0 0;
+        text-transform: uppercase;
+        color: #738a94;
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .post-image {
+        margin: 0 0 5vmin;
+    }
+
+    .post-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .post-content {
+        padding: 0 5vmin;
+    }
+
+    .post-content > * + * {
+        margin-top: 1.5em;
+    }
+
+    .post-content [id]:not(:first-child) {
+        margin: 2em 0 0;
+    }
+
+    .post-content > [id] + * {
+        margin-top: 1rem;
+    }
+
+    .post-content [id] + .kg-card,
+    .post-content blockquote + .kg-card {
+        margin-top: 40px;
+    }
+
+    .post-content > ul,
+    .post-content > ol,
+    .post-content > dl {
+        padding-left: 1.9em;
+    }
+
+    .post-content hr {
+        margin-top: 40px;
+    }
+
+    .post .post-content hr + * {
+        margin-top: 40px;
+    }
+
+    .post-content amp-img {
+        background-color: #f8f8f8;
+    }
+
+    .post-content blockquote {
+        position: relative;
+        font-style: italic;
+    }
+
+    .post-content blockquote::before {
+        content: "";
+        position: absolute;
+        left: -1.5em;
+        top: 0;
+        bottom: 0;
+        width: 0.3rem;
+        background: var(--ghost-accent-color, #1292EE);
+    }
+
+    .post-content blockquote.kg-blockquote-alt {
+        font-size: 1.2em;
+        font-style: italic;
+        line-height: 1.6em;
+        text-align: center;
+        color: #738a94;
+        padding: 0.75em 3em 1.25em;
+    }
+
+    .post-content blockquote.kg-blockquote-alt::before {
+        display: none;
+    }
+
+    .post-content :not(.kg-card):not([id]) + .kg-card {
+        margin-top: 40px;
+    }
+
+    .post-content .kg-card + :not(.kg-card) {
+        margin-top: 40px;
+    }
+
+    .kg-card figcaption {
+        padding: 1.5rem 1.5rem 0;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.4em;
+        opacity: 0.6;
+    }
+
+    .kg-card figcaption strong {
+        color: rgba(0,0,0,0.8);
+    }
+
+    .post-content :not(pre) code {
+        vertical-align: middle;
+        padding: 0.15em 0.4em 0.15em;
+        border: #e1eaef 1px solid;
+        font-weight: 400;
+        font-size: 0.9em;
+        line-height: 1em;
+        color: #15171a;
+        background: #f0f6f9;
+        border-radius: 0.25em;
+    }
+
+    .post-content > pre {
+        overflow: scroll;
+        padding: 16px 20px;
+        color: #fff;
+        background: #1F2428;
+        border-radius: 5px;
+        box-shadow: 0 2px 6px -2px rgba(0,0,0,.1), 0 0 1px rgba(0,0,0,.4);
+    }
+
+    .kg-embed-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .kg-image-card img {
+        margin: auto;
+    }
+
+    .kg-gallery-card + .kg-gallery-card {
+        margin-top: 0.75em;
+    }
+
+    .kg-gallery-container {
+        position: relative;
+    }
+
+    .kg-gallery-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .kg-gallery-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .kg-gallery-row:not(:first-of-type) {
+        margin: 0.75em 0 0 0;
+    }
+
+    .kg-gallery-image:not(:first-of-type) {
+        margin: 0 0 0 0.75em;
+    }
+
+    .kg-bookmark-card,
+    .kg-bookmark-publisher {
+        position: relative;
+    }
+
+    .kg-bookmark-container,
+    .kg-bookmark-container:hover {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row-reverse;
+        color: currentColor;
+        background: rgba(255,255,255,0.6);
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        text-decoration: none;
+        border-radius: 3px;
+        box-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.1), 0 0 1px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    }
+
+    .kg-bookmark-content {
+        flex-basis: 0;
+        flex-grow: 999;
+        padding: 20px;
+        order: 1;
+    }
+
+    .kg-bookmark-title {
+        font-weight: 600;
+        font-size: 1.5rem;
+        line-height: 1.3em;
+    }
+
+    .kg-bookmark-description {
+        display: -webkit-box;
+        max-height: 45px;
+        margin: 0.5em 0 0 0;
+        font-size: 1.4rem;
+        line-height: 1.55em;
+        overflow: hidden;
+        opacity: 0.8;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .kg-bookmark-metadata {
+        margin-top: 20px;
+    }
+
+    .kg-bookmark-metadata {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 1.3rem;
+        line-height: 1.3em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .kg-bookmark-description {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+    }
+
+    .kg-bookmark-metadata amp-img {
+        width: 18px;
+        height: 18px;
+        max-width: 18px;
+        max-height: 18px;
+        margin-right: 10px;
+    }
+
+    .kg-bookmark-thumbnail {
+        display: flex;
+        flex-basis: 20rem;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+
+    .kg-bookmark-thumbnail amp-img {
+        max-height: 200px;
+    }
+
+    .kg-bookmark-author {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    .kg-bookmark-publisher::before {
+        content: "•";
+        margin: 0 .5em;
+    }
+
+    .kg-toggle-card-icon {
+        display: none;
+    }
+
+    .kg-toggle-content {
+        margin-top: 0.8rem;
+    }
+
+    .kg-product-card-container {
+        background: transparent;
+        padding: 20px;
+        width: 100%;
+        border-radius: 5px;
+        box-shadow: inset 0 0 0 1px rgb(124 139 154 / 25%);
+    }
+
+    .kg-product-card-description p {
+        margin-top: 1.5em;
+    }
+
+    .kg-product-card-description ul {
+        margin-left: 24px;
+    }
+
+    .kg-product-card-title {
+        font-size: 1.9rem;
+        font-weight: 700;
+    }
+
+    .kg-product-card-rating-star {
+        height: 28px;
+        width: 20px;
+        margin-right: 2px;
+    }
+
+    .kg-product-card-rating-star svg {
+    width: 16px;
+    height: 16px;
+    fill: currentColor;
+    opacity: 0.15;
+    }
+
+    .kg-product-card-rating-active.kg-product-card-rating-star svg {
+    opacity: 1;
+    }
+
+    .kg-nft-card-container {
+        position: relative;
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        text-decoration: none;
+        font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
+        font-size: 1.4rem;
+        font-weight: 400;
+        box-shadow: 0 2px 6px -2px rgb(0 0 0 / 10%), 0 0 1px rgb(0 0 0 / 40%);
+        width: 100%;
+        max-width: 512px;
+        color: #15212A;
+        background: #fff;
+        border-radius: 5px;
+        transition: none;
+        margin: 0 auto;
+    }
+
+    .kg-nft-metadata {
+        padding: 2.0rem;
+    }
+
+    .kg-nft-image-container {
+        position: relative;
+    }
+
+    .kg-nft-image {
+        display: flex;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .kg-nft-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .kg-nft-header h4.kg-nft-title {
+        font-size: 1.9rem;
+        font-weight: 700;
+        margin: 0;
+        color: #15212A;
+    }
+
+    .kg-nft-header amp-img {
+        max-width: 114px;
+        max-height: 26px;
+    }
+
+    .kg-nft-opensea-logo {
+        margin-top: 2px;
+        width: 100px;
+    }
+
+    .kg-nft-creator {
+        font-family: inherit;
+        color: #95A1AD;
+    }
+
+    .kg-nft-creator span {
+        font-weight: 500;
+        color: #15212A;
+    }
+
+    .kg-nft-card p.kg-nft-description {
+        font-size: 1.4rem;
+        line-height: 1.4em;
+        margin: 2.0rem 0 0;
+        color: #222;
+    }
+
+    .kg-button-card {
+        display: flex;
+        position: static;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .kg-btn {
+        display: flex;
+        position: static;
+        align-items: center;
+        padding: 0 2.0rem;
+        height: 4.0rem;
+        line-height: 4.0rem;
+        font-size: 1.65rem;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .kg-btn:hover {
+        opacity: 0.85;
+    }
+
+    .kg-btn-accent {
+        background-color: var(--ghost-accent-color, #1292EE);
+        color: #fff;
+    }
+
+    .kg-callout-card {
+        display: flex;
+        padding: 20px 28px;
+        border-radius: 3px;
+    }
+
+    .kg-callout-card-grey {
+        background: rgba(124, 139, 154, 0.13);
+    }
+
+    .kg-callout-card-white {
+        background: transparent;
+        box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
+    }
+
+    .kg-callout-card-blue {
+        background: rgba(33, 172, 232, 0.12);
+    }
+
+    .kg-callout-card-green {
+        background: rgba(52, 183, 67, 0.12);
+    }
+
+    .kg-callout-card-yellow {
+        background: rgba(240, 165, 15, 0.13);
+    }
+
+    .kg-callout-card-red {
+        background: rgba(209, 46, 46, 0.11);
+    }
+
+    .kg-callout-card-pink {
+        background: rgba(225, 71, 174, 0.11);
+    }
+
+    .kg-callout-card-purple {
+        background: rgba(135, 85, 236, 0.12);
+    }
+
+    .kg-callout-card-accent {
+        background: var(--ghost-accent-color);
+        color: #fff;
+    }
+
+    .kg-callout-card-accent a {
+        color: #fff;
+    }
+
+    .kg-callout-emoji {
+        padding-right: 16px;
+        line-height: 1.3;
+        font-size: 1.25em;
+    }
+
+    .kg-header-card {
+        padding: 6em 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .kg-header-card.kg-size-small {
+        padding-top: 4em;
+        padding-bottom: 4em;
+    }
+
+    .kg-header-card.kg-size-large {
+        padding-top: 12em;
+        padding-bottom: 12em;
+    }
+
+    .kg-header-card.kg-width-full {
+        padding-left: 4em;
+        padding-right: 4em;
+    }
+
+    .kg-header-card.kg-align-left {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .kg-header-card.kg-style-dark {
+        background: #15171a;
+        color: #ffffff;
+    }
+
+    .kg-header-card.kg-style-light {
+        color: #15171a;
+        border: 1px solid rgba(124, 139, 154, 0.25);
+        border-width: 1px 0;
+    }
+
+    .kg-header-card.kg-style-accent {
+        background-color: var(--ghost-accent-color);
+    }
+
+    .kg-header-card.kg-style-image {
+        background-color: #e7e7eb;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .kg-header-card h2 {
+        font-size: 4em;
+        font-weight: 700;
+        line-height: 1.1em;
+        margin: 0;
+    }
+
+    .kg-header-card h2 strong {
+        font-weight: 800;
+    }
+
+    .kg-header-card.kg-size-small h2 {
+        font-size: 3em;
+    }
+
+    .kg-header-card.kg-size-large h2 {
+        font-size: 5em;
+    }
+
+    .kg-header-card h3 {
+        font-size: 1.25em;
+        font-weight: 500;
+        line-height: 1.3em;
+        margin: 0;
+    }
+
+    .kg-header-card h3 strong {
+        font-weight: 600;
+    }
+
+    .kg-header-card.kg-size-small h3 {
+        font-size: 1em;
+    }
+
+    .kg-header-card.kg-size-large h3 {
+        font-size: 1.5em;
+    }
+
+    .kg-header-card:not(.kg-style-light) h2,
+    .kg-header-card:not(.kg-style-light) h3 {
+        color: #ffffff;
+    }
+
+    .kg-header-card a.kg-header-card-button {
+        display: flex;
+        position: static;
+        align-items: center;
+        padding: 0 1.2em;
+        height: 2.4em;
+        line-height: 1em;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-size: 0.95em;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: opacity 0.2s ease-in-out;
+        background-color: var(--ghost-accent-color);
+        color: #ffffff;
+        margin: 1.75em 0 0;
+    }
+
+    .kg-header-card a.kg-header-card-button:hover {
+        opacity: 0.85;
+    }
+
+    .kg-header-card.kg-size-large a.kg-header-card-button {
+        margin-top: 2em;
+    }
+
+    .kg-header-card.kg-size-small a.kg-header-card-button {
+        margin-top: 1.5em;
+    }
+
+    .kg-header-card.kg-style-image a.kg-header-card-button,
+    .kg-header-card.kg-style-dark a.kg-header-card-button {
+        background: #ffffff;
+        color: #15171a;
+    }
+
+    .kg-header-card.kg-style-accent a.kg-header-card-button {
+        background: #ffffff;
+        color: var(--ghost-accent-color);
+    }
+
+    .kg-audio-card {
+        display: flex;
+        width: 100%;
+        box-shadow: inset 0 0 0 1px rgba(124, 139, 154, 0.25);
+    }
+
+    .kg-audio-thumbnail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        min-width: 80px;
+        height: 80px;
+        background: transparent;
+        object-fit: cover;
+        aspect-ratio: 1/1;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .kg-audio-thumbnail.placeholder {
+        background: var(--ghost-accent-color);
+    }
+
+    .kg-audio-thumbnail.placeholder svg {
+        width: 24px;
+        height: 24px;
+        fill: white;
+    }
+
+    .kg-audio-player-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        --seek-before-width: 0%;
+        --volume-before-width: 100%;
+        --buffered-width: 0%;
+    }
+
+    .kg-audio-title {
+        width: 100%;
+        padding: 8px 12px 0;
+        border: none;
+        font-family: inherit;
+        font-size: 1.1em;
+        font-weight: 700;
+        background: transparent;
+    }
+
+    .kg-audio-player {
+        display: none;
+    }
+
+    .kg-width-full.kg-card-hascaption {
+        display: grid;
+        grid-template-columns: inherit;
+    }
+
+    .post-content table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    .post-content th {
+        padding: 0.5em 0.8em;
+        text-align: left;
+        font-size: .75em;
+        text-transform: uppercase;
+    }
+
+    .post-content td {
+        padding: 0.4em 0.7em;
+    }
+
+    .post-content tbody tr:nth-child(2n + 1) {
+        background-color: rgba(0,0,0,0.1);
+        padding: 1px;
+    }
+
+    .post-content tbody tr:nth-child(2n + 2) td:last-child {
+        box-shadow:
+            inset 1px 0 rgba(0,0,0,0.1),
+            inset -1px 0 rgba(0,0,0,0.1);
+    }
+
+    .post-content tbody tr:nth-child(2n + 2) td {
+        box-shadow: inset 1px 0 rgba(0,0,0,0.1);
+    }
+
+    .post-content tbody tr:last-child {
+        border-bottom: 1px solid rgba(0,0,0,.1);
+    }
+
+    .page-footer {
+        padding: 60px 5vmin;
+        margin: 60px auto 0;
+        text-align: center;
+        background-color: #f8f8f8;
+    }
+
+    .page-footer h3 {
+        margin: 0.5rem 0 0 0;
+    }
+
+    .page-footer p {
+        max-width: 500px;
+        margin: 1rem auto 1.5rem;
+        font-size: 1.7rem;
+        line-height: 1.5em;
+        color: rgba(0,0,0,0.6)
+    }
+
+    .powered {
+        display: inline-flex;
+        align-items: center;
+        margin: 30px 0 0;
+        padding: 6px 9px 6px 6px;
+        border: rgba(0,0,0,0.1) 1px solid;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: -0.2px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+        font-weight: 500;
+        color: #222;
+        text-decoration: none;
+        background: #fff;
+        border-radius: 6px;
+    }
+
+    .powered svg {
+        height: 16px;
+        width: 16px;
+        margin: 0 6px 0 0;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            font-size: 1.6rem;
+        }
+        h1 {
+            font-size: 3rem;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+        }
+    }
+
+    @media (max-width: 400px) {
+        h1 {
+            font-size: 2.6rem;
+            line-height: 1.15em;
+        }
+        h2 {
+            font-size: 2rem;
+            line-height: 1.2em;
+        }
+        h3 {
+            font-size: 1.7rem;
+        }
+    }
+
+    :root {--ghost-accent-color: #15171A;}
+    </style>
+
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+    
+
+</head>
+
+<body class="amp-template">
+    <header class="page-header">
+        <a href="http://localhost:2368">
+                <amp-img class="site-icon" src="http://localhost:2368/content/images/2021/12/mt..png" width="50" height="50" layout="fixed" alt="Mitty Romero Antonioli - Product Design - Portafolio"></amp-img>
+        </a>
+    </header>
+
+    <main class="content" role="main">
+        <article class="post">
+
+            <header class="post-header">
+                <h1 class="post-title">Mediastream - CDP (Customer Data Platform)</h1>
+                <section class="post-meta">
+                    en -
+                    <time class="post-date" datetime="2024-07-26">26 jul. 2024</time>
+                </section>
+            </header>
+            <figure class="post-image">
+                <amp-img src="http://localhost:2368/content/images/2024/07/thumb-5.png" width="600" height="340" layout="responsive" 
+                alt="Mediastream - CDP (Customer Data Platform)"
+                ></amp-img>
+            </figure>
+            <section class="post-content">
+
+                <p>Design and Implementation of a Customer Data Platform to Centralize and Manage Client Information</p><hr></hr><p>2023 <br /> Mediastream</p>
+<p><a href="https://www.figma.com/proto/Y4EMmH1juDHpgIuV4vpHmS/Prototipo-CDP?node-id=1-4537&amp;t=PB7773kLawSGL6ig-1&amp;scaling=scale-down-width&amp;content-scaling=fixed&amp;page-id=0%3A1&amp;starting-point-node-id=1%3A4537&amp;ref=localhost" rel="noreferrer">Prototype (figma)</a></p><h2 id="%F0%9F%8E%81-what-is-cdpthe-product">🎁 What is CDP? - The Product</h2><p>CDP (Customer Data Platform) is an optional module of the Mediastream Platform suite that a<strong>llows companies to quickly and efficiently access their OTT (Over-The-Top, content distribution channels) user data.</strong> This module was designed to facilitate the exploration and analysis of detailed information about user behavior, <strong>enabling companies to make more informed decisions and optimize their strategies effectively.</strong></p><h2 id="%F0%9F%8C%9F-the-project">🌟 The Project</h2><p>The challenge was to <strong>design an intuitive and efficient module for Mediastream Platform users to easily access their user data and create user funnels to have critical information at their fingertips.</strong> This involved designing the UX/UI of the module, creating the funnel system, and testing with users and stakeholders to ensure its effectiveness. Additionally, I developed the initial prototype of the module in React as a microfrontend to integrate it into Mediastream Platform.</p><h3 id="objectives">Objectives</h3><p>he project objectives were:</p><ul><li>Design an accessible and efficient module for user data management.</li><li>Create an intuitive funnel system to facilitate decision-making.</li><li>Test the effectiveness of the design with users and stakeholders.</li><li>Develop the module prototype in React for its integration into the platform.</li></ul><p></p><hr></hr><h2 id="%E2%98%80%EF%B8%8F-the-design-improving-usability-and-aesthetics">☀️ The Design: Improving Usability and Aesthetics</h2><h3 id="phase-one-the-problem-context-and-initial-approaches">Phase one: The Problem, Context, and Initial Approaches</h3><p>For the redesign of the CDP module, I started from the existing Customer module, which showed certain inefficiencies. This module was limited to an informative table with links to user profiles within another module.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Old customer module</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Before and after of the module's initial screen</span></figcaption></figure><p>The old Customer module did not provide a clear overview of the current customer situation or the overall state of the OTT platform. When the need for a new system arose, <strong>it became clear that a solution was needed that would allow for the creation of customer funnels and offer faster and more comprehensive visualization of all data features. </strong>The goal was to improve users' ability to analyze and make decisions based on a comprehensive view of the information.</p><p>During the development of the CDP module, we took advantage of the Platform Design System update process to<strong> validate the new design guidelines in this module.</strong> I seized this opportunity to restructure the initial module interface, improving both its efficiency and coherence. I developed new components specific to this module and added dedicated screens for each functionality, ensuring that the design remained in line with the rest of Platform.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Main screen of the module (first iteration)</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Main screen of the module (second iteration)</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Main screen of the module (last iteration)</span></figcaption></figure><p>To better understand the needs of the module, we built the user profile for the CDP module based on interviews with the commercial area, data analysts, and other professionals who would use the module. These interviews helped us understand their daily tasks, challenges, and objectives, <strong>revealing a critical need to access large volumes of data quickly and user-friendly. </strong>Based on this information, a detailed user profile was created, represented by Alejandro, the data analyst. This profile guided the module design, ensuring that the needs and expectations of the end users were effectively addressed.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Representación del user persona principal</span></figcaption></figure><p>During the interviews, we also discovered a secondary user: in more manual companies and OTTs, we found <strong>administrators with little technical knowledge who were responsible for manually updating user data and managing subscriptions and payments. </strong>This user was accustomed to how the module already worked, so we took this profile into account to maintain the familiar experience.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Representación del user persona secundario</span></figcaption></figure><h3 id="structure-and-functionality">Structure and Functionality</h3><p>Based on the requirements research, we determined that the CDP module had to offer three key actions focused on optimizing data management and decision-making:</p><ul><li><strong>Access user data</strong>: Users should be able to navigate and access detailed data about their OTT users' behavior and preferences. This functionality had to be designed to be intuitive and easy to use, allowing users to quickly find the information they need.</li><li><strong>Create user funnels</strong>: With this option, users could create custom funnels to analyze user behavior at different stages. Funnels would help identify patterns and optimization opportunities, facilitating informed decision-making. This was one of the biggest challenges of the project, as structuring and designing the interaction for funnel creation required a balance between functionality and usability. Additionally, visually handling the large amount of data efficiently was crucial to ensure a smooth and effective user experience.</li><li><strong>Export data</strong>: Users can export data to share with other team members or for further analysis. This functionality is designed to be quick and efficient, ensuring that data can be easily shared. Additionally, we had to retain "legacy" functionalities that were widely used by current users, such as being able to download a list of all deleted customers.</li></ul><p></p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>flujo general de la funcionalidad del módulo</span></figcaption></figure><p><strong>Funnel creation design</strong></p><p>For the design of funnel creation in the CDP module, we considered two options: a horizontal funnel and a Sankey diagram. <strong>Both options had their merits, but ultimately, the user preferred the Sankey diagrams for being more visually appealing and faster to understand.</strong> These diagrams allow for a clear and comprehensible representation of data loss between each filter, which was an important concern for users.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>The two proposed graphs</span></figcaption></figure><p>Initially, we considered including both types of graphs, the horizontal funnel and the Sankey diagram, allowing users to toggle between them according to their preferences. This flexibility sought to offer greater customization in data visualization. However, during user testing, <strong>we discovered that this duality was confusing and overloaded the user experience.</strong> Test participants found it difficult to switch between the two types of graphs and preferred a simpler and more direct solution. <strong>This feedback led us to focus solely on the Sankey diagrams, as they provided a clearer and more visually appealing representation</strong> of data loss between each filter, facilitating a quick and efficient understanding of the information flow.</p><p>We conceived the funnel as a system in which the user starts with the general data (registered users) and adds filters of their preference, visualizing the results of each filter intuitively. <strong>The final data of the funnel is displayed on the general screen of the module, providing an overview of the filtered information. Additionally, we included the option to download the final data as a CSV file for further analysis, which responded to a specific need of users to delve deeper into the analysis outside the platform</strong>. This functionality was designed to facilitate the decision-making process, allowing users to identify patterns and optimization opportunities efficiently.</p><figure class="kg-card kg-image-card"></figure><p>To optimize funnel creation in the CDP module, we added the option to apply multiple filters simultaneously, allowing users to build funnels more efficiently and accurately. <strong>This functionality was designed for users, like Alejandro, to combine multiple criteria and visualize how they interact in real-time, without needing to apply each filter individually and wait for the results. </strong>This improvement not only speeds up the data analysis process but also allows users to experiment with different filter combinations quickly and easily, facilitating the identification of patterns and optimization opportunities. The implementation of this feature was based on feedback received during user testing, highlighting the importance of a flexible and efficient tool for informed decision-making.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Menu to add filters</span></figcaption></figure><p></p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Modal to create multiple filters</span></figcaption></figure><p></p><p><strong>User Information</strong></p><p>n the original module, there was a user detail screen with detailed and editable information. During the interviews, we determined <strong>the need to maintain this screen and its functionalities, but with an optimized design</strong>. Additionally, we created an overview screen for the user to offer a quicker and more visual view of the customer and their behavior.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Initial user detail screen vs redesigned screen</span></figcaption></figure><p>We retained all secondary user functions on the customer screen, optimizing the design and information architecture of the screen. <strong>For the overview, we prioritized showing potential insights of the customer profile and behavior with graphs and bullets to facilitate quick reading. This allows users to gain an immediate understanding of patterns and trends without needing to delve into each individual detail. </strong>This design decision was based on needs expressed during interviews, highlighting the importance of an interface that is both detailed and accessible.</p><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Overview of the user</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><figcaption><span>Overview of user behavior</span></figcaption></figure><h2 id="%F0%9F%92%BBimplementation">💻Implementation</h2><p>The implementation of the new CDP module design was carried out as a microservice using React. As the front-end lead, I was responsible for developing the initial module prototype, collaborating with other developers to add the necessary functionality and ensure seamless integration with Mediastream Platform.</p><h2 id="%F0%9F%A7%A0-key-learnings">🧠 Key Learnings </h2><p>During this project, I gained valuable learning experiences in various areas. I learned to efficiently design and test a data management module, from creating the UX/UI to implementing new graphical elements. Additionally, I had the opportunity to work directly on the codebase with React, improving my front-end development skills. I also gained experience in creating custom funnel systems and testing design with users and stakeholders, which significantly contributed to my professional development. The biggest challenge was structuring and designing the interaction for funnel creation and visually handling the large amount of data efficiently, which taught me to balance functionality and usability in a complex design.</p>
+
+            </section>
+
+        </article>
+    </main>
+    <footer class="page-footer">
+            <amp-img class="site-icon" src="http://localhost:2368/content/images/2021/12/mt..png" width="50" height="50" layout="fixed" alt="Mitty Romero Antonioli - Product Design - Portafolio"></amp-img>
+        <h3>Mitty Romero Antonioli - Product Design - Portafolio</h3>
+            <p>Product Design - Portafolio</p>
+        <p><a href="http://localhost:2368">Read more posts →</a></p>
+        <a class="powered" href="https://ghost.org" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 156 156"><g fill="none" fill-rule="evenodd"><rect fill="#15212B" width="156" height="156" rx="27"/><g transform="translate(36 36)" fill="#F6F8FA"><path d="M0 71.007A4.004 4.004 0 014 67h26a4 4 0 014 4.007v8.986A4.004 4.004 0 0130 84H4a4 4 0 01-4-4.007v-8.986zM50 71.007A4.004 4.004 0 0154 67h26a4 4 0 014 4.007v8.986A4.004 4.004 0 0180 84H54a4 4 0 01-4-4.007v-8.986z"/><rect y="34" width="84" height="17" rx="4"/><path d="M0 4.007A4.007 4.007 0 014.007 0h41.986A4.003 4.003 0 0150 4.007v8.986A4.007 4.007 0 0145.993 17H4.007A4.003 4.003 0 010 12.993V4.007z"/><rect x="67" width="17" height="17" rx="4"/></g></g></svg> Published with Ghost</a>
+    </footer>
+    
+</body>
+</html>

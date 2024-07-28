@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/assets/built/index.css?v=dd1af8a0cc" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="/assets/css/scss/custom.css?v=dd1af8a0cc" />
+        
+
+        <script src="/assets/built/index.js?v=dd1af8a0cc" defer></script>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+            integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+        <title>Diseño e implementación de MoAI: El asistente de inteligencia artificial de Mediastream</title>
+
+        <meta name="description" content="Asistente de chat basado en inteligencia artificial, diseñado para automatizar tareas y mejorar la experiencia del usuario en la plataforma de Mediastream.">
+    <link rel="icon" href="http://localhost:2368/content/images/size/w256h256/2021/12/mt..png" type="image/png">
+    <link rel="canonical" href="http://localhost:2368/es/moai/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="http://localhost:2368/es/moai/amp/">
+    
+    <meta property="og:site_name" content="Mitty Romero Antonioli - Product Design - Portafolio">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Diseño e implementación de MoAI: El asistente de inteligencia artificial de Mediastream">
+    <meta property="og:description" content="Asistente de chat basado en inteligencia artificial, diseñado para automatizar tareas y mejorar la experiencia del usuario en la plataforma de Mediastream.">
+    <meta property="og:url" content="http://localhost:2368/es/moai/">
+    <meta property="og:image" content="http://localhost:2368/content/images/2024/07/thumb-6.png">
+    <meta property="article:published_time" content="2024-07-28T02:10:05.000Z">
+    <meta property="article:modified_time" content="2024-07-28T04:16:55.000Z">
+    <meta property="article:tag" content="Web/UX/UI">
+    
+    <meta property="article:publisher" content="https://www.facebook.com/ghost">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Diseño e implementación de MoAI: El asistente de inteligencia artificial de Mediastream">
+    <meta name="twitter:description" content="Asistente de chat basado en inteligencia artificial, diseñado para automatizar tareas y mejorar la experiencia del usuario en la plataforma de Mediastream.">
+    <meta name="twitter:url" content="http://localhost:2368/es/moai/">
+    <meta name="twitter:image" content="http://localhost:2368/content/images/2024/07/thumb-6.png">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="es">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="Web/UX/UI">
+    <meta name="twitter:site" content="@ghost">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="619">
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Mitty Romero Antonioli - Product Design - Portafolio",
+        "url": "http://localhost:2368/",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://localhost:2368/content/images/2021/12/mt..svg"
+        }
+    },
+    "author": {
+        "@type": "Person",
+        "name": "es",
+        "url": "http://localhost:2368/author/es/",
+        "sameAs": []
+    },
+    "headline": "Diseño e implementación de MoAI: El asistente de inteligencia artificial de Mediastream",
+    "url": "http://localhost:2368/es/moai/",
+    "datePublished": "2024-07-28T02:10:05.000Z",
+    "dateModified": "2024-07-28T04:16:55.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "http://localhost:2368/content/images/2024/07/thumb-6.png",
+        "width": 1200,
+        "height": 619
+    },
+    "keywords": "Web/UX/UI",
+    "description": "Asistente de chat basado en inteligencia artificial, diseñado para automatizar tareas y mejorar la experiencia del usuario en la plataforma de Mediastream. ",
+    "mainEntityOfPage": "http://localhost:2368/es/moai/"
+}
+    </script>
+
+    <meta name="generator" content="Ghost 5.88">
+    <link rel="alternate" type="application/rss+xml" title="Mitty Romero Antonioli - Product Design - Portafolio" href="http://localhost:2368/rss/">
+    
+    <script defer src="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/sodo-search.min.js" data-key="2fed2a802149a705eaa84dc132" data-styles="https://cdn.jsdelivr.net/ghost/sodo-search@~1.1/umd/main.css" data-sodo-search="http://localhost:2368/" crossorigin="anonymous"></script>
+    
+    <link href="http://localhost:2368/webmentions/receive/" rel="webmention">
+    <script defer src="/public/cards.min.js?v=dd1af8a0cc"></script><style>:root {--ghost-accent-color: #15171A;}</style>
+    <link rel="stylesheet" type="text/css" href="/public/cards.min.css?v=dd1af8a0cc">
+    
+ <style>
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+
+        </head>
+        <body class="post-template tag-hash-es tag-hash-webes tag-web-ux-ui">
+           
+            <div class="gh-viewport">
+                <header id="gh-head" class="gh-head">
+                    <nav class="gh-head-inner gh-container">
+
+                        <div class="gh-head-brand">
+                            <a class="gh-burger" role="button">
+                                <div class="gh-burger-box">
+                                    <div class="gh-burger-inner"></div>
+                                </div>
+                            </a>
+                            <div class="lang-select d-lg-none d-flex">
+                                    <div class="lang-select-container d-flex
+                                        gap-3 flex-wrap">
+
+                                        <label class="language-label">
+                                            <span class="material-symbols-outlined">language</span></label>
+                                        <div id="lang-box-es" class="lang-box">es</div>
+
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <div class="gh-head-menu">
+                            <ul class="nav">
+    <li class="nav-inicio"><a href="http://localhost:2368/">Inicio</a></li>
+    <li class="nav-sobre-mi"><a href="http://localhost:2368/es/sobre-mi/">Sobre mí</a></li>
+    <li class="nav-github"><a href="https://github.com/MTRomeroA">Github</a></li>
+</ul>
+
+
+                            <div class="gh-head-actions">
+                                <div class="gh-head-actions-list">
+                                    <div class="lang-select d-md-flex d-none">
+                                        <div class="lang-select-container d-flex">
+
+                                            <label class="language-label">
+                                                <span class="material-symbols-outlined">language</span></label></label>
+                                            <div id="lang-box-es" class="lang-box">es</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </nav>
+                </header>
+
+                <main class="gh-main">
+                     <img class="header-deco-image" src= "/assets/img/header-deco.svg?v=dd1af8a0cc" alt="">
+
+                    
+
+<article class="gh-article post tag-hash-es tag-hash-webes tag-web-ux-ui">
+
+    <header class="gh-header gh-canvas">
+                <ul class="d-flex gap-2 mb-4 justify-content-center">
+                    <p class=" badge bg-secondary text-dark">Web/UX/UI</p>
+                </ul>
+        <h1 class="gh-title text-primary">Diseño e implementación de MoAI: El asistente de inteligencia artificial de Mediastream</h1>
+
+        <p class="gh-excerpt">Asistente de chat basado en inteligencia artificial, diseñado para automatizar tareas y mejorar la experiencia del usuario en la plataforma de Mediastream. </p>
+
+        <figure class="gh-feature-image">
+            <img
+                srcset="/content/images/size/w300/2024/07/thumb-6.png 300w,
+                        /content/images/size/w600/2024/07/thumb-6.png 600w,
+                        /content/images/size/w1200/2024/07/thumb-6.png 1000w,
+                        /content/images/size/w2000/2024/07/thumb-6.png 2000w"
+                sizes="(max-width: 1000px) 1000px, 2000px"
+                loading="lazy"
+                src="/content/images/size/w2000/2024/07/thumb-6.png"
+                alt="Diseño e implementación de MoAI: El asistente de inteligencia artificial de Mediastream"
+            />
+        </figure>
+    </header>
+
+    <div class="gh-content gh-canvas">
+        
+        <hr><p style="">2024 <br> Mediastream</p>
+<h2 id="%F0%9F%8E%81-%C2%BFqu%C3%A9-es-moaiel-producto">🎁 ¿Qué es MoAI? - El Producto </h2><p>MoAI (Mediastream AI) es un <strong>asistente de chat basado en inteligencia artificial, desarrollado para mejorar la experiencia del usuario en la plataforma de Mediastream mediante la automatización y simplificación de tareas</strong>. Este módulo utiliza inteligencia artificial para realizar diversas funciones de manera eficiente, permitiendo a los usuarios centrarse en actividades más estratégicas.</p><h2 id="%F0%9F%8C%9F-el-proyecto">🌟 El Proyecto</h2><p>El inicio de MoAI se remonta a un proyecto de innovación durante el hackathon de Mediastream en Chile en febrero de 2024. Durante tres intensos días, creamos un prototipo funcional/prueba de concepto de un bot que podía ejecutar tareas simples dentro de la plataforma de Mediastream. Estas tareas incluían <strong>cortar una transmisión en vivo, crear marcadores publicitarios en medios, generar metadatos para medios y responder preguntas generales sobre Mediastream.</strong></p><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-20.png" class="kg-image" alt="" loading="lazy" width="2000" height="1125" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-20.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-20.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-20.png 1600w, http://localhost:2368/content/images/2024/07/image-20.png 2000w" sizes="(min-width: 720px) 720px"></figure><h3 id="objetivos">Objetivos</h3><p>Los objetivos del proyecto fueron:</p><ul><li><strong>Desarrollar un asistente de IA funcional</strong> capaz de automatizar tareas rutinarias dentro de la plataforma de Mediastream.</li><li><strong>Diseñar una experiencia de usuario intuitiva</strong> para que el asistente interactúe de manera fluida con la plataforma.</li><li>Presentar una <strong>versión más pulida de MoAI en el NAB Show</strong> para recopilar feedback y medir el interés.</li><li>Refinar el prototipo en una <strong>solución más modular y escalable para su implementación a gran escala.</strong></li></ul><p></p><hr><h2 id="%E2%98%80%EF%B8%8F-el-proceso">☀️ El proceso</h2><h3 id="fase-inicial-y-experiencia-en-el-hackathon">Fase Inicial y Experiencia en el Hackathon</h3><p>Durante el hackathon, me encargué de todo el diseño del asistente y su flujo. El enfoque estaba en crear una interfaz intuitiva y fácil de usar que pudiera manejar diversas tareas de manera eficiente. <strong>Esta fase se centró en crear una prueba de concepto funcional que pudiera demostrar el potencial del asistente de IA en la plataforma de Mediastream.</strong> El prototipo inicial fue un éxito, demostrando el potencial de MoAI para optimizar las operaciones dentro de la plataforma.</p><p><strong>El usuario</strong></p><p>El usuario típico de MoAI es un <strong>operador de medios o un productor de contenido</strong>, encargado de gestionar y optimizar la transmisión de medios en la plataforma de Mediastream. Estos usuarios necesitan realizar tareas repetitivas y técnicas, como cortar transmisiones en vivo, generar metadatos, y crear marcadores publicitarios. Buscan una herramienta que les permita <strong>automatizar procesos rutinarios</strong>, mejorar la <strong>eficiencia operativa</strong> y concentrarse en actividades más estratégicas y creativas dentro de la plataforma.</p><p>Los aspectos clave de esta fase fueron:</p><ul><li><strong>Objetivo Principal:</strong> Crear un asistente de IA que pudiera ejecutar tareas simples y básicas dentro de la plataforma de Mediastream.</li><li><strong>Funcionalidades Básicas:</strong> El prototipo permitía realizar acciones como cortar una transmisión en Live Editor, crear marcadores publicitarios en medios, responder preguntas generales sobre la plataforma.</li><li><strong>Interfaz:</strong> La interfaz del prototipo era bastante simple, basada en comandos de texto que los usuarios ingresaban para interactuar con el asistente.</li><li><strong>Flujo de Conversación:</strong> El flujo de conversación era lineal, con una estructura básica que guiaba a los usuarios a través de los diferentes comandos disponibles sin opciones avanzadas ni personalización.</li></ul><figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/flowchart-1.svg" class="kg-image" alt="" loading="lazy" width="1976" height="2657"><figcaption><span style="white-space: pre-wrap;">Flowchart del chatbot inicial</span></figcaption></figure>
+<!--kg-card-begin: html-->
+<p>Prototipo incial →</p>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FfBtEzDMJM9JHKA8gSzSBFB%2FPrototipo-MOAI---Hackaton%3Fnode-id%3D1-849%26t%3DpqncWrTKV1bKdc8c-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D1%253A849" allowfullscreen></iframe>
+<p>Flujo:Preguntas/Live editor</p>
+<!--kg-card-end: html-->
+<p>Desarrollamos en React una muestra funcional del prototipo vinculado a platform para presentarlo al final de la hackaton</p><h3 id="mejoras-para-el-nab-show">Mejoras para el NAB Show</h3><p>Después del hackathon, el trabajamos en una versión más pulida de MoAI para su presentación en el NAB Show. <strong>Esta fase implicó varias mejoras clave para optimizar la funcionalidad y la experiencia del usuario</strong>:</p><ul><li><strong>Interfaz Mejorada:</strong> La interfaz se rediseñó para ser más atractiva y funcional, incorporando botones y opciones de selección en lugar de comandos de texto. Esto facilitó una interacción más intuitiva y visual.</li></ul><figure class="kg-card kg-image-card kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/image-21.png" class="kg-image" alt="" loading="lazy" width="2000" height="2039" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-21.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-21.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-21.png 1600w, http://localhost:2368/content/images/2024/07/image-21.png 2000w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">Side by side de los cambios en la interfaz del splashscreen</span></figcaption></figure><p>Por ejemplo, en la pantalla de inicio, incluí opciones directamente visibles, un mensaje que aclaraba el contexto del chat y una opción para ver el historial de conversaciones. </p><p>Para mejorar la experiencia del usuario, decidimos<strong> implementar el reconocimiento de contexto en el asistente. Esto significa que, si el usuario se encontraba viendo un contenido multimedia,</strong> al abrir el asistente, este reconocería el medio y proporcionaría información relevante automáticamente. A parte, dependiendo del contexto, solo se muestran las opciones relevantes.</p><p>El diseño se refinó para ser visualmente más atractivo y profesional, alineándose con las expectativas del NAB Show y destacando las capacidades avanzadas del asistente.</p><figure class="kg-card kg-image-card kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/image-22.png" class="kg-image" alt="" loading="lazy" width="904" height="160" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-22.png 600w, http://localhost:2368/content/images/2024/07/image-22.png 904w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">mensaje de contexto</span></figcaption></figure><figure class="kg-card kg-image-card kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/image-23.png" class="kg-image" alt="" loading="lazy" width="2000" height="572" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-23.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-23.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-23.png 1600w, http://localhost:2368/content/images/2024/07/image-23.png 2000w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">El splash screen con y sin contexto</span></figcaption></figure><p>Para el diseño visual, era importante que el asistente tuviera su propia identidad. Basándome en el design system de Platform, creé una iteración enfocada en el color morado secundario y el uso de gradientes. Esto ayudó a que el asistente se <strong>viera distintivo, pero al mismo tiempo mantuviera una apariencia familiar y coherente con el resto de la plataforma.</strong></p><ul><li><strong>Paths de Conversación:</strong> Se implementaron paths de conversación específicos para diferentes tareas, con contexto y sin contexto. Esto permitió que el asistente guiara a los usuarios de manera más eficaz a través de flujos de trabajo complejos, mejorando la usabilidad.</li></ul><figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/ad-breaks.svg" class="kg-image" alt="" loading="lazy" width="11945" height="8388"><figcaption><span style="white-space: pre-wrap;">Flujo de adbreaks</span></figcaption></figure><figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/live-1.svg" class="kg-image" alt="" loading="lazy" width="11945" height="8388"><figcaption><span style="white-space: pre-wrap;">Flujo de live</span></figcaption></figure><figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/metadata1-1.svg" class="kg-image" alt="" loading="lazy" width="11945" height="8388"><figcaption><span style="white-space: pre-wrap;">flujo de metadata</span></figcaption></figure><figure class="kg-card kg-image-card kg-width-full kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/question.svg" class="kg-image" alt="" loading="lazy" width="5835" height="4741"><figcaption><span style="white-space: pre-wrap;">Flujo de preguntas</span></figcaption></figure><p>Determiné lineamientos específicos para los flujos del chat, como:</p><ul><ul><li><strong>Confirmación de solicitudes:</strong> Las peticiones o decisiones del usuario deben ser repetidas por el asistente a modo de confirmación.</li></ul></ul><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-25.png" class="kg-image" alt="" loading="lazy" width="2000" height="1478" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-25.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-25.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-25.png 1600w, http://localhost:2368/content/images/2024/07/image-25.png 2013w" sizes="(min-width: 720px) 720px"></figure><ul><ul><li><strong>Contenedor de opciones:</strong> Las opciones seleccionables se muestran en un contenedor aparte para mayor claridad.</li></ul></ul><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-26.png" class="kg-image" alt="" loading="lazy" width="1911" height="1636" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-26.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-26.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-26.png 1600w, http://localhost:2368/content/images/2024/07/image-26.png 1911w" sizes="(min-width: 720px) 720px"></figure><ul><ul><li><strong>Selecciones como mensajes:</strong> Cuando el usuario selecciona un media/live de una interfaz de opciones, estas selecciones se convierten en un mensaje en el chat. Del mismo modo, las acciones rápidas se transforman en un mensaje en el chat.</li></ul></ul><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-27.png" class="kg-image" alt="" loading="lazy" width="1957" height="161" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-27.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-27.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-27.png 1600w, http://localhost:2368/content/images/2024/07/image-27.png 1957w" sizes="(min-width: 720px) 720px"></figure><ul><ul><li><strong>Título descriptivo:</strong> Un título en el encabezado que describe el chat actual.</li></ul></ul><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-28.png" class="kg-image" alt="" loading="lazy" width="1780" height="2040" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-28.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-28.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-28.png 1600w, http://localhost:2368/content/images/2024/07/image-28.png 1780w" sizes="(min-width: 720px) 720px"></figure><ul><ul><li><strong>Tono amigable:</strong> El tono y modo del texto del asistente es amigable y animado, utilizando emojis y mensajes divididos en párrafos para mejorar su lectura.</li></ul><li><strong>Opciones de Selección de Medios:</strong> Se introdujeron más opciones que permitían a los usuarios seleccionar el media o el live que deseaban editar, adaptando el componente a la cantidad de resultados disponibles</li></ul><figure class="kg-card kg-image-card kg-card-hascaption"><img src="http://localhost:2368/content/images/2024/07/image-24.png" class="kg-image" alt="" loading="lazy" width="2000" height="797" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-24.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-24.png 1000w, http://localhost:2368/content/images/size/w1600/2024/07/image-24.png 1600w, http://localhost:2368/content/images/2024/07/image-24.png 2000w" sizes="(min-width: 720px) 720px"><figcaption><span style="white-space: pre-wrap;">opciones de selección</span></figcaption></figure><p>Implementamos esta versión del asistente en Platform para presentarla de manera funcional en el NAB Show. La presentación en el NAB Show fue un éxito, generando un gran interés entre los asistentes y stakeholders. Este éxito reforzó la <strong>necesidad de implementar el asistente de manera definitiva en Platform.</strong></p><p>Prototipo mejorado →</p>
+<!--kg-card-begin: html-->
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FxR9hysr8ZebaLqCogeCPyX%2FUntitled%3Ft%3DLSvuci6kou0y389p-1%26scaling%3Dmin-zoom%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D1-1547%26starting-point-node-id%3D1%253A1547%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+<!--kg-card-end: html-->
+
+<!--kg-card-begin: html-->
+<div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1HbbF2Q9Jk8iRDimUOGBOCKT1Uoer0MMo/preview" allow="autoplay"></iframe>
+    </div>
+<!--kg-card-end: html-->
+<h3 id="desarrollo-del-mvp-en-producci%C3%B3n-actual">Desarrollo del MVP en Producción Actual</h3><p>La versión MVP de MoAI en producción representa la <strong>implementación del núcleo esencial del asistente, utilizando la tecnología completa y necesaria</strong>. Las características y mejoras en esta fase incluyen:</p><ul><li><strong>Generación de Metadatos:</strong> La funcionalidad principal del MVP se centra en la generación automática de metadatos para medios, utilizando transcripciones impulsadas por IA. Esto permite a los usuarios obtener metadatos detallados y precisos con mayor eficiencia.</li><li><strong>Modularidad:</strong> El MVP está diseñado para ser modular, facilitando la incorporación de nuevas funcionalidades y la adaptación a diferentes necesidades de los usuarios. Esta modularidad es clave para futuras actualizaciones y mejoras.</li></ul><p>La iteración actual de MoAI consiste en un flujo simple y eficiente. El usuario presiona un botón que genera la metadata basada en sus configuraciones. Estas configuraciones se pueden ajustar desde el mismo botón, a través de una opción secundaria. Si el contenido multimedia no tiene transcripciones generadas, el asistente solicita generar las transcripciones primero.</p><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-30.png" class="kg-image" alt="" loading="lazy" width="1352" height="800" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-30.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-30.png 1000w, http://localhost:2368/content/images/2024/07/image-30.png 1352w" sizes="(min-width: 720px) 720px"></figure><h4 id="opciones-para-generar-metadata">Opciones para Generar Metadata:</h4><ol><li><strong>Usar Detalles de la Cuenta:</strong> Utiliza una descripción general de la cuenta, incluida en las opciones generales, sobre el tipo de contenido que suelen producir para generar la metadata. Esta opción se puede activar o desactivar para cada generación de metadata. Esta descripción es visible desde el mismo modal.</li></ol><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-31.png" class="kg-image" alt="" loading="lazy" width="652" height="325" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-31.png 600w, http://localhost:2368/content/images/2024/07/image-31.png 652w"></figure><ol><li><strong>Prompt:</strong> Texto específico sobre el contenido multimedia en el que el asistente se basa para generar la metadata.</li><li><strong>Tono:</strong> Selección del tono para generar la metadata. Las opciones disponibles son:<ul><li>Neutral</li><li>Informativo</li><li>Formal</li><li>Relajado</li></ul></li></ol><figure class="kg-card kg-image-card"><img src="http://localhost:2368/content/images/2024/07/image-29.png" class="kg-image" alt="" loading="lazy" width="1352" height="1490" srcset="http://localhost:2368/content/images/size/w600/2024/07/image-29.png 600w, http://localhost:2368/content/images/size/w1000/2024/07/image-29.png 1000w, http://localhost:2368/content/images/2024/07/image-29.png 1352w" sizes="(min-width: 720px) 720px"></figure><p>Actualmente, MoAI puede generar metadata como el título, descripción, categorías y tags de un media.</p><p>Prototipo de testeo →</p>
+<!--kg-card-begin: html-->
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F5V76ycHEgkbV3mSikQYW3T%2FMVP-produccion-moai%3Ft%3DPCwxJE1QDD0mO6vT-1%26scaling%3Dscale-down-width%26content-scaling%3Dfixed%26page-id%3D0%253A1%26node-id%3D1-1117%26starting-point-node-id%3D1%253A1117" allowfullscreen></iframe>
+<!--kg-card-end: html-->
+
+<!--kg-card-begin: html-->
+<div class="video-container">
+        <iframe src="https://drive.google.com/file/d/1hDg6Ltlq9IBSpmephJxc9q6z_G9CtWDP/preview" allow="autoplay"></iframe>
+    </div>
+
+<!--kg-card-end: html-->
+<h3 id="implementaci%C3%B3n-y-futuras-mejoras">Implementación y Futuras Mejoras</h3><p>La versión MVP es solo el comienzo. Se trabaja en expandir las capacidades y modularidad del asistente. Las futuras actualizaciones incluirán IA avanzada para automatizar aún más tareas y agregar valor a los usuarios de Mediastream.</p><hr><h2 id="%F0%9F%A7%A0-aprendizajes">🧠 Aprendizajes</h2><p>El proyecto me permitió aprender sobre el diseño y prueba de asistentes de IA desde cero. Balancear funcionalidad y usabilidad fue un desafío, y el proyecto mejoró mis habilidades en tecnologías de IA e integración en plataformas robustas.</p><p></p>
+    </div>
+
+    <footer class="gh-footer gh-canvas">
+
+
+    </footer>
+
+</article>
+
+<aside class="gh-readmore">
+    <div class="row">
+        <div class="col-12 col-sm-4"></div>
+        <div class="col-12 col-sm-4">
+           <a class="btn btn-primary btn-lg text-white text-center d-flex justify-content-center" href="http://localhost:2368">Volver a
+            portafolio</a>
+
+        </div>
+        <div class="col-12 col-sm-4"></div>
+
+       
+
+     
+    </div>
+</aside>
+
+
+
+                </main>
+
+                <footer class="gh-foot">
+                    <div class="gh-container">
+                        <div class="gh-foot-menu">
+                        </div>
+                        <div class="gh-foot-meta">
+                            © 2024 Mitty Romero Antonioli <br> <a href="mailto:mt.romero.antonioli@gmail.com">mt.romero.antonioli@gmail.com</a>
+                        </div>
+                    </div>
+                </footer>
+
+            </div>
+            <script>
+$(document).ready(function () {
+  // bind change event to select
+  $('.lang-box').on('click', function () {
+    var homeName ="index"
+    var url = new URL(window.location.href);
+    var urlString = window.location.href;
+    var modifier = this.innerHTML // get selected value
+    var newUrl;
+    console.log(this);
+
+
+    if (modifier == 'es') {
+
+          if (urlString == "http://localhost:2368/")
+          {newUrl = urlString;
+          window.location = newUrl + 'en/' ;
+          }
+          else {
+           newUrl = urlString.replace(/es/, 'en');
+           window.location = newUrl.slice(0, -1) + '-en';
+        }
+          }
+
+    else if (modifier == 'en') {
+        newUrl = urlString.replace(/en/, 'es')
+        window.location = newUrl.slice(0, -4);
+        }    
+        
+
+  });
+});
+</script>
+                
+
+            </body>
+        </html>
